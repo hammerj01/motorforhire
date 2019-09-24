@@ -1,0 +1,76 @@
+<?php
+
+class Library extends Controller {
+
+	function Library()
+	{
+		parent::Controller();
+		$this->load->helper('download');
+	}
+	
+	function index()
+	{
+		$data['page_class'] = 'library';
+		$this->page = 'library';
+		$this->heading = 'Library';
+		$this->load->view('content/library', $data);
+	}
+	
+	function prolastin_infusion_checklist()
+	{
+		$this->data = file_get_contents('public/files/Prolastin_Infusion_Checklist.pdf'); // Read the file's contents
+		$this->name = 'Prolastin_Infusion_Checklist.pdf';
+		force_download($this->name, $this->data);
+	}
+	
+	function care_plan()
+	{
+		$this->data = file_get_contents('public/files/Care_Plan.pdf'); // Read the file's contents
+		$this->name = 'Care_Plan.pdf';
+		force_download($this->name, $this->data);
+	}
+	
+	function therapy_guidelines()
+	{
+		$this->data = file_get_contents('public/files/Therapy_Guidelines.pdf'); // Read the file's contents
+		$this->name = 'Therapy_Guidelines.pdf';
+		force_download($this->name, $this->data);
+	}
+	
+	function post_test()
+	{
+		$this->data = file_get_contents('public/files/Post_Test.pdf'); // Read the file's contents
+		$this->name = 'Post_Test.pdf';
+		force_download($this->name, $this->data);
+	}
+	
+	function test_evaluation()
+	{
+		$this->data = file_get_contents('public/files/Test_Evaluation.pdf'); // Read the file's contents
+		$this->name = 'Test_Evaluation.pdf';
+		force_download($this->name, $this->data);
+	}
+	
+	function certificate()
+	{
+		$this->data = file_get_contents('public/files/prolastin_certificate.rtf'); // Read the file's contents
+		$this->name = 'prolastin_certificate.rtf';
+		force_download($this->name, $this->data);
+	}
+	
+	function post_test_answer_sheet()
+	{
+		$this->data = file_get_contents('public/files/Prolastin_Post_Test_Answer_Sheet.pdf'); // Read the file's contents
+		$this->name = 'Prolastin_Post_Test_Answer_Sheet.pdf';
+		force_download($this->name, $this->data);
+	}
+	
+	function fax_cover_sheet()
+	{
+		$this->data = file_get_contents('public/files/Fax_Cover_Sheet.pdf'); // Read the file's contents
+		$this->name = 'Fax_Cover_Sheet.pdf';
+		force_download($this->name, $this->data);
+	}
+	
+}
+?>

@@ -1,0 +1,171 @@
+ /*
+-------------------------------------
+
+	Prosser Hallock
+	Print Style Sheet
+	http://www.prosserhallock.com
+	
+	author: nGen Works
+	http://ngenworks.com
+
+-------------------------------------- */
+
+* {
+	margin: 0;
+	padding: 0;
+	}
+
+body {
+	font: small/1.75em "Lucida Grande", "Lucida Sans", Helvetica, Arial, sans-serif;
+	text-align: left;
+	color: #000;
+	}
+
+#skip {
+	display: none;
+	}
+	
+#sitewrapper {
+	margin: 0;
+	font-size: 90%;
+	}
+	
+#foot {
+	font-size: 85%;
+	text-align: left;
+	border-top: 1px solid #000;
+	padding-top: 20px;
+	}
+	
+/* links
+-------------------------------------- */
+
+a:link {
+	color: #666;
+	}
+	
+a:visited {
+	color: #999;
+	}
+	
+a:hover, a:active {
+	color: #666;
+	}
+	
+/* images
+-------------------------------------- */
+
+img { display: none; }
+
+img.signature { display: block; }
+
+
+/* typography & titles
+-------------------------------------- */
+
+h1, h2, h3, h4 {
+	margin: 20px 0 5px 0;
+	line-height: 1.2em;
+	}
+
+h1 {
+	font-family: 'lucida grande', arial, helvetica, sans-serif;
+	font-size: 150%;
+	}
+
+h2 {
+	font-family: 'lucida grande', arial, helvetica, sans-serif;
+	font-size: 220%;
+	}
+
+h3 {
+	font-size: 160%;
+	}
+
+h4 {
+	font-size: 120%;
+	font-family: 'lucida grande', arial, helvetica, sans-serif;
+	}
+
+h5, h6 {
+	margin: 5px 0;
+	font-size: 100%;
+	}
+
+h1 a, h2 a, h3 a, h4 a, h5 a {
+	text-decoration: none;
+	}
+
+p, blockquote {
+	margin: 0 0 15px 0;
+	line-height: 1.5em;
+	}
+
+.intro { font-size: 120%; font-style: italic; }
+	
+
+/* lists
+-------------------------------------- */
+
+ul, ol {
+	margin: 0 0 10px 0;
+	padding: 0;
+	}
+
+
+
+/* nav
+-------------------------------------- */
+
+#nav, #nav_sub, #nav_utility {	
+	display: none;
+	}
+	
+
+
+/* Certificate
+-------------------------------------- */
+
+body.certificate #header,
+body.certificate h2#section_head,
+body.certificate #foot {
+	display: none;
+}
+
+#certificate {
+	margin-top: 50px;
+	padding: 25px 25px 0 25px;
+	border: 10px double #000;
+	font-family: Georgia, 'Times New Roman', Times, serif; 
+	text-align: center;
+	font-size: 120%;
+}
+
+#certificate h1, #certificate h2, #certificate h3, #certificate h4 {
+	font-family: Georgia, 'Times New Roman', Times, serif; 
+	color: #000;
+}
+
+#certificate h1 { margin-bottom: 30px; border-bottom: 1px solid #a1a1a1; }
+
+#certificate h2 { margin-bottom: 30px; line-height: 1.2em; }
+
+#certificate p.foot {
+	clear: both;
+	font-size: 80%;
+	font-style: italic;
+	line-height: 1.3em;
+}
+
+#certificate_director, #certificate_coordinator { 
+	float: left; 
+	width: 40%; 
+	padding: 10px;
+	font-size: 85%;
+	font-style: italic;
+	line-height: 1.3em;
+}
+
+#certificate_coordinator {
+	float: right;
+}

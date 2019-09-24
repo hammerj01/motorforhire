@@ -1,0 +1,160 @@
+/* ---------------------------------------------------------------------------
+
+	Form Styles
+	
+	author: nGen Works
+	http://ngenworks.com
+
+--------------------------------------------------------------------------- */
+
+div.form_container { margin-bottom: 25px; }
+
+label { color: #333; }
+
+label.more { padding-right: 0; }
+
+span.notice {
+	padding: 0 2px;
+	/* background-color: #eae996; */
+	background-color: #c8ff88;
+	color: #333;
+}
+
+p span.notice {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-style: italic;
+	font-weight: normal;
+}
+
+input, select, textarea { font-size: 100%; }
+
+textarea { height: 100px; }
+
+/* one column form ------------------------------- */
+dl.one_column { width: 100%; }
+
+dl.one_column dd ul { list-style: none; }
+dl.one_column dd li { list-style: none; }
+
+/* two column forms ------------------------------ */
+
+dl.two_column { width: 100%; }
+
+dl.two_column dt {
+	float: left;
+	width: 20%;
+	line-height: 22px;
+	text-align: right;
+}
+
+dt label { font-weight: bold; }
+
+dl.two_column dd {
+	margin: 0 0 0 22%;
+	margin-bottom: 10px;
+	line-height: 22px;
+}
+
+/* NOTE: used to break and create rows for relative font size increase */
+
+dl.two_column dd.clear {
+	clear: both;
+	margin-left: 0;
+	padding-bottom: 4px;
+	background: url(/public/shared/images/px.gif) repeat-x bottom left;
+}
+
+dl.two_column dd.clear hr { display: none; }
+
+/* sub fields */
+
+dl.two_column dd.sub { margin-bottom: 7px; font-size: 90%; }
+
+dl.two_column dd.sub label { color: #666; }
+
+/* full column dds */
+
+dl.two_column dd.column_full { margin-left: 0; }
+
+/* notes and formatting examples */
+
+.note { font-size: 90%; color: #666; }
+
+/* lists within dds */
+
+dl.two_column dd ul, 
+dl.two_column dd li  {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+/* remember me */
+
+dd.remember label { font-size: 90%; color: #666; }
+
+/* field widths */
+
+.full { width: 68%; }
+
+.medium { width: 35%; margin-right: 10px; }
+
+.small { width: 15%; }
+
+.radio { margin-right: 5px; }
+
+select.small { margin-right: 10px; }
+
+/* submit */
+
+input#submit { 
+	margin-right: 25px;
+	font-size: 100%; 
+}
+
+#submit.right {  float: right;  margin-right: 0; }
+
+dl.two_column dd.submit { margin-bottom: 0; }
+
+dl.two_column dd.submit input { margin-right: 5px; }
+
+/* form messages */
+
+div.message {
+	margin-bottom: 20px;
+	padding: 10px 15px;
+	color: #789700;
+	border: 2px solid #dcdcdc;
+	font-weight: bold;
+}
+
+div.message p {
+	margin-bottom: 0;
+	padding-left: 18px;
+	background: url(/public/shared/images/icon_confirm.gif) no-repeat 0 50%;
+}
+
+div.message ul { 
+	margin: 0; 
+	list-style: none;
+}
+
+div.error { color: #333; }
+
+div.error li {
+	padding-left: 18px;
+	font-weight: normal;
+	background: url(/public/shared/images/icon_error.gif) no-repeat 0 50%;
+}
+
+div.error span { 
+	color: #c00; 
+	font-weight: bold;
+}
+
+/* ---------------------------------------------------------------------------
+	
+	=IE fixes
+
+--------------------------------------------------------------------------- */
+

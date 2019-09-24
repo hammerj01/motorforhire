@@ -1,0 +1,36 @@
+<h2 id="section_head">Alpha-1 Nurse Certificate of Completion</h2>
+
+<?php if ($status == "complete") { ?>	
+
+<div id="certificate">
+<h2>Alpha-1 Nurse Certificate of Completion</h2>
+<h1><?php echo $name; ?></h1>
+<p class="intro">Has Successfully Completed Alpha-1 Antitrypsin Deficiency and Augmentation Therapy - Prolastin C</p>
+<p><strong>Date:</strong>  <?php echo $date; ?></p> 
+<p>Activity Number: CEARP # 9318 For 3 Contact Hours</p>
+<p>Expiration Date of Activity: February 9, 2017</p>
+
+<p>Presented By: AlphaNet, Inc.<br />3300 Ponce de Leon Boulevard<br />Coral Gables, FL  33134
+<p id="certificate_director"><img src="/public/shared/images/signature-robert.gif" alt="Signature of Robert Sandhaus MD, PH.D" class="signature" /><br />Robert Sandhaus MD, PH.D<br />Medical Director</p>
+<p id="certificate_coordinator"><img src="/public/shared/images/signature-teresa.gif" alt="Teresa Kitchen RN, BSN" class="signature" /><br />Teresa Kitchen RN, BSN<br />Educational Program Coordinator</p>                                     			            
+<p class="foot">This continuing nursing education activity was approved by the Washington State Nurses Association Continuing Education Approval & Recognition Program (CEARP), an accredited approver by the American Nurses Credentialing Center’s Commission on Accreditation.</p>
+</div> <!-- close #certificate -->
+</div> <!-- close #content -->
+
+<?php } elseif ($status == "fail") { ?>
+
+<div class="message">
+<ul>
+<li>You have not passed the test yet. Please <?php echo anchor('dashboard/prolastin/take_test_again', 'retake and pass the test to receive your certificate') ?>.</li>
+</ul>	
+</div> <!-- .message -->
+
+<?php } else { ?>
+
+<div class="message">
+<ul>
+<li>You must pass the test before receiving your certificate. Please <?php echo anchor('dashboard/prolastin', 'finish the test') ?>.</li>
+</ul>	
+</div> <!-- .message -->
+	
+<?php } ?>
